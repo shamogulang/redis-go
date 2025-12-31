@@ -64,7 +64,6 @@ func (r *Resp) Read() (Value, error) {
 	if err != nil {
 		return Value{}, err
 	}
-	fmt.Println(_type)
 	switch _type {
 	case ARRAY:
 		return r.ReadArray()
